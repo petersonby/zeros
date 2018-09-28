@@ -5,11 +5,9 @@ module.exports = function getZerosCount(number) {
   let pow = 2;
   
   while ((number / fivePow) > 1) {
-
     count += Math.floor(number / fivePow);
-  	fivePow = Math.pow(5, pow);
-  	pow++;
-
+    fivePow = Math.pow(5, pow);
+    pow++;
   }
 
   return count;
